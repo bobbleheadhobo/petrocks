@@ -23,7 +23,7 @@
   --background-color-rgb: 255, 255, 255;
   --default-color: #212529;
   --default-color-rgb: 33, 37, 41;
-  --primary-color: #e84545;
+  --primary-color: #aa74d4;
   --primary-color-rgb: 232, 69, 69;
   --secondary-color: #32353a;
   --secondary-color-rgb: 50, 53, 58;
@@ -34,9 +34,9 @@
 /* Nav Menu Colors */
 :root {
   --nav-color: #3a3939;
-  --nav-hover-color: #e84545;
+  --nav-hover-color: #aa74d4;
   --nav-dropdown-color: #3a3939;
-  --nav-dropdown-hover-color: #e84545;
+  --nav-dropdown-hover-color: #aa74d4;
   --nav-dropdown-background-color: #ffffff;
   --nav-mobile-background-color: #ffffff;
 }
