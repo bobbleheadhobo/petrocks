@@ -1119,7 +1119,6 @@ section {
 }
 
 .services .service-item .icon i {
-  color: rgba(var(--default-color-rgb), 0.7);
   font-size: 56px;
   transition: ease-in-out 0.3s;
   z-index: 2;
@@ -1131,7 +1130,6 @@ section {
   content: "";
   height: 30px;
   width: 30px;
-  background: rgba(var(--primary-color-rgb), 0.3);
   border-radius: 50px;
   z-index: 1;
   bottom: -15px;
