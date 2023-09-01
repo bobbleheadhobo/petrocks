@@ -88,7 +88,7 @@ section {
 --------------------------------------------------------------*/
 .section-title {
   text-align: center;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
 }
 
 .section-title h2 {
@@ -102,7 +102,7 @@ section {
   content: "";
   width: 50px;
   height: 2px;
-  background: var(--primary-color);
+  background: #001f03;
   display: inline-block;
 }
 
@@ -263,7 +263,7 @@ section {
   --background-color: #ffffff;
   --secondary-color: #444444;
   --nav-color: #444444;
-  --nav-hover-color: #d83535;
+  --nav-hover-color: #aa74d4;
 }
 
 /*--------------------------------------------------------------
@@ -1376,8 +1376,8 @@ section {
 
 .pricing h3 {
   font-weight: 600;
-  margin-bottom: 15px;
-  font-size: 20px;
+  margin-bottom: 4px;
+  font-size: 24px;
   text-align: center;
 }
 
@@ -1385,7 +1385,6 @@ section {
   margin: 30px auto 20px auto;
   width: 70px;
   height: 70px;
-  background: var(--primary-color);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -1394,50 +1393,50 @@ section {
   transform-style: preserve-3d;
 }
 
-.pricing .icon i {
-  color: var(--background-color);
-  font-size: 28px;
-  transition: ease-in-out 0.3s;
-  line-height: 0;
+.pricing .icon .GalaxyOpal{
+  width: 120px;
+  height: 120px;
+  border-radius: 3%;
+  border: 1.2px solid #3d3d3d;
 }
 
-.pricing .icon::before {
-  position: absolute;
-  content: "";
-  height: 86px;
-  width: 86px;
-  border-radius: 50%;
-  background: rgba(var(--primary-color-rgb), 0.2);
-  transition: all 0.3s ease-out 0s;
-  transform: translateZ(-1px);
+.pricing .icon .UglyRock{
+  width: 120px;
+  height: 120px;
+  border-radius: 3%;
+  border: 1.2px solid #3d3d3d;
 }
 
-.pricing .icon::after {
-  position: absolute;
-  content: "";
-  height: 102px;
-  width: 102px;
-  border-radius: 50%;
-  background: rgba(var(--primary-color-rgb), 0.1);
-  transition: all 0.3s ease-out 0s;
-  transform: translateZ(-2px);
+.pricing .Subheading{
+  color: #5f6e67ae;
+  font-size: medium;
+  text-align: center;
+}
+
+.pricing .icon .Granite{
+  width: 120px;
+  height: 120px;
+  border-radius: 3%;
+  border: 1.2px solid #3d3d3d;
 }
 
 .pricing h4 {
   font-size: 48px;
-  color: var(--primary-color);
+  color: #0c7600;
   font-weight: 700;
   font-family: var(--heading-font);
+  margin-top: 40px;
   margin-bottom: 25px;
   text-align: center;
 }
 
 .pricing h4 sup {
   font-size: 28px;
+  color: #0c7600;
 }
 
 .pricing h4 span {
-  color: rgba(var(--default-color-rgb), 0.5);
+  color: #3a3a3a;
   font-size: 18px;
   font-weight: 400;
 }
@@ -1475,12 +1474,12 @@ section {
 }
 
 .pricing .buy-btn {
-  color: rgba(var(--default-color-rgb), 0.8);
+  color: #001f03;
   background-color: var(--contrast-color);
   display: inline-block;
   padding: 10px 40px;
   border-radius: 4px;
-  border: 1px solid rgba(var(--default-color-rgb), 0.2);
+  border: 1.4px solid rgba(var(--default-color-rgb), 0.2);
   transition: none;
   font-size: 16px;
   font-weight: 600;
@@ -1489,22 +1488,13 @@ section {
 }
 
 .pricing .buy-btn:hover {
-  background-color: var(--primary-color);
+  background-color:  #001f03;
   color: var(--contrast-color);
 }
 
 .pricing .featured {
   z-index: 10;
-  border: 3px solid var(--primary-color);
-}
-
-.pricing .featured .buy-btn {
-  background-color: var(--primary-color);
-  color: var(--contrast-color);
-}
-
-.pricing .featured .buy-btn:hover {
-  background-color: rgba(var(--primary-color-rgb), 0.9);
+  border: 2px solid #3d3d3d;
 }
 
 @media (min-width: 992px) {
