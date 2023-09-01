@@ -2888,6 +2888,10 @@ section {
   z-index: 1000;
 }
 
+.custom-icon{
+  font-size: 30px;
+}
+
 .arrow {
   font-size: 50px; /* Adjust the size of the arrow as required */
   color: white;
@@ -2904,4 +2908,9 @@ section {
   60% {
     transform: translateY(-5px);
   }
+}
+
+
+.purecounter[data-display-format="k"]::after {
+  content: 'k';
 }
