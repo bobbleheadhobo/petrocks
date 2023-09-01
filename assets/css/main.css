@@ -1422,7 +1422,7 @@ section {
 
 .pricing h4 {
   font-size: 48px;
-  color: #0c7600;
+  color: #aa74d4;
   font-weight: 700;
   font-family: var(--heading-font);
   margin-top: 40px;
@@ -1432,7 +1432,7 @@ section {
 
 .pricing h4 sup {
   font-size: 28px;
-  color: #0c7600;
+  color: #aa74d4;
 }
 
 .pricing h4 span {
