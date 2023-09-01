@@ -704,36 +704,46 @@
           </div>
 
           <div class="col-lg-6">
-            <form action="https://forms.un-static.com/forms/279a9e72a1ffbb34276799bd8be57b1bb3b5a04f" method="post">
+            <form id="contactForm" action="https://forms.un-static.com/forms/279a9e72a1ffbb34276799bd8be57b1bb3b5a04f" method="post">
               <div class="row gy-4">
-
+          
                 <div class="col-md-6">
                   <input type="text" name="name" class="form-control" placeholder="Your Name" required>
                 </div>
-
+          
                 <div class="col-md-6 ">
                   <input type="email" class="form-control" name="email" placeholder="Your Email" required>
                 </div>
-
+          
                 <div class="col-md-12">
                   <input type="text" class="form-control" name="subject" placeholder="Subject" required>
                 </div>
-
+          
                 <div class="col-md-12">
                   <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
                 </div>
-
+          
                 <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
+                <div class="sent-message" style="display: none;">Message Sent!</div>
+          
                   <button type="submit">Send Message</button>
                 </div>
-
+          
               </div>
             </form>
-          </div><!-- End Contact Form -->
+            
+            <script>
+              document.getElementById('contactForm').addEventListener('submit', function(event) {
+                event.preventDefault(); // Stop form from submitting immediately
+                document.querySelector('.sent-message').style.display = 'block'; // Show the sent message
+                // Optional: Wait for a moment before submitting the form to give the user some feedback (this is not necessary but can enhance user experience)
+                setTimeout(() => {
+                  event.target.submit(); // Submit the form
+                }, 1000);
+              });
+            </script>
+          </div>
+          
 
         </div>
 
