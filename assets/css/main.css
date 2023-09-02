@@ -1413,6 +1413,13 @@ section {
   text-align: center;
 }
 
+.pricing .Subheading_2{
+  color: #2c322fae;
+  font-size: 6px;
+  text-align: center;
+  margin-top: 30px;
+}
+
 .pricing .icon .Granite{
   width: 120px;
   height: 120px;
