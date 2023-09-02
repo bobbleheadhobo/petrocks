@@ -24,7 +24,7 @@
   --default-color: #212529;
   --default-color-rgb: 33, 37, 41;
   --primary-color: #aa74d4;
-  --primary-color-rgb: 232, 69, 69;
+  --primary-color-rgb: 00, 00, 00;
   --secondary-color: #32353a;
   --secondary-color-rgb: 50, 53, 58;
   --contrast-color: #ffffff;
@@ -1422,7 +1422,7 @@ section {
 
 .pricing h4 {
   font-size: 48px;
-  color: #0c7600;
+  color: #aa74d4;
   font-weight: 700;
   font-family: var(--heading-font);
   margin-top: 40px;
@@ -1432,7 +1432,7 @@ section {
 
 .pricing h4 sup {
   font-size: 28px;
-  color: #0c7600;
+  color: #aa74d4;
 }
 
 .pricing h4 span {
@@ -1488,7 +1488,7 @@ section {
 }
 
 .pricing .buy-btn:hover {
-  background-color:  #001f03;
+  background-color:  #000000;
   color: var(--contrast-color);
 }
 
@@ -2874,4 +2874,43 @@ section {
 .blog-details .comments .reply-form .btn-primary:hover {
   color: var(--contrast-color);
   background-color: rgba(var(--primary-color-rgb), 0.8);
+}
+
+
+
+.scroll-down-arrow {
+  animation: bounce 2s infinite;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 1000;
+}
+
+.custom-icon{
+  font-size: 30px;
+}
+
+.arrow {
+  font-size: 50px; /* Adjust the size of the arrow as required */
+  color: white;
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+
+.purecounter[data-display-format="k"]::after {
+  content: 'k';
 }
