@@ -68,10 +68,9 @@ function getAllCookies(){
             }
             throw new Error('Failed to fetch number of visitors');
         })
-        .then(numVistors => {
-            
+        .then(numVistors => {            
             // Update the DOM with the fetched number
-            const visitorElement = document.querySelector(".purecounter[data-purecounter-end='uniquevisitors']");
+            const visitorElement = document.querySelector(".purecounter[data-purecounter-end='0']");
             visitorElement.setAttribute('data-purecounter-end', numVistors);
             
             // Force a re-render of the purecounter (if needed)
