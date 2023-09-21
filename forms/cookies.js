@@ -26,6 +26,8 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     }
+
+    getAllCookies();
 });
 
 function getCookieValue(name) {
@@ -38,8 +40,7 @@ function generateUniqueID() {
 }
 
 function parseOS(userAgent) {
-    // Implement a simple parser or use a library
-    // This is a very basic example
+
     if (userAgent.includes('Windows')) return 'Windows';
     if (userAgent.includes('Mac')) return 'Mac';
     if (userAgent.includes('Linux')) return 'Linux';
@@ -47,10 +48,40 @@ function parseOS(userAgent) {
 }
 
 function parseBrowser(userAgent) {
-    // Implement a simple parser or use a library
-    // This is a very basic example
+
     if (userAgent.includes('Chrome')) return 'Chrome';
     if (userAgent.includes('Firefox')) return 'Firefox';
     if (userAgent.includes('Safari')) return 'Safari';
     return 'Unknown';
 }
+
+function getAllCookies(){
+    fetch('https://cookieserver.supersoup4.workers.dev/', {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        })
+        .then(response => {
+            if (response.ok) {
+                return response.text();
+            }
+            throw new Error('Failed to fetch number of visitors');
+        })
+        .then(numVistors => {
+            
+            // Update the DOM with the fetched number
+            const visitorElement = document.querySelector(".purecounter[data-purecounter-end='uniquevisitors']");
+            visitorElement.setAttribute('data-purecounter-end', numVistors);
+            
+            // Force a re-render of the purecounter (if needed)
+            if (window.PureCounter) {
+                new PureCounter(visitorElement);
+            }
+        })
+        .catch(error => {
+            console.error("Error:", error);
+        });
+}
+
+
