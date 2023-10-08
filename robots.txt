@@ -1,2 +1,4 @@
 User-agent: *
 Disallow: payment.html
+
+Sitemap: https://rockhardsitters.com/sitemap.xml
