@@ -726,7 +726,7 @@
 
           <div class="col-lg-6">
 
-            <form id="contactForm" action="https://forms.un-static.com/forms/279a9e72a1ffbb34276799bd8be57b1bb3b5a04f"
+            <!-- <form id="contactForm" action="https://forms.un-static.com/forms/279a9e72a1ffbb34276799bd8be57b1bb3b5a04f"
               method="post">
               <div class="row gy-4">
 
@@ -747,17 +747,17 @@
                 </div>
 
                 <div class="col-md-12 text-center">
-                  <div class="sent-message" style="display: none;">Message Sent!</div>
+                  <div class="sent-message2" style="display: none;">Message Sent!</div>
 
                   <button type="submit">Send Message</button>
                 </div>
 
               </div>
-            </form>
+            </form> -->
 
             <br>
             <h2>Tell us about your experience</h2>
-            <form id ="survey" action="https://forms.un-static.com/forms/279a9e72a1ffbb34276799bd8be57b1bb3b5a04" method ="post">
+            <form id ="survey" action="https://forms.un-static.com/forms/279a9e72a1ffbb34276799bd8be57b1bb3b5a04f" method ="post">
               <div class="row gy-4">
 
                 <div class="col-md-6">
@@ -770,17 +770,20 @@
 
                 <div class="col-md-12">
                   <p>On a scale of 1-10, how apparent is what we are selling?</p>
-                  <input type="number" class="form-control" name="rating" max="10" min="1" placeholder="1-10" required>
+                  <input type="number" class="form-control" name="website-rating" max="10" min="1" placeholder="1-10" required>
                 </div>
 
                 <div class="col-md-12">
                   <p>On a scale of 1-10. Based on your experience with Rockhardsitters.com, if this were a real service, how likely are you to use our service?</p>
-                  <input type="number" class="form-control" name="rating" max="10" min="1" placeholder="1-10" required>
+                  <input type="number" class="form-control" name="usefulness-rating" max="10" min="1" placeholder="1-10" required>
                 </div>
                 
                 <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Any additional suggestions here"></textarea>
-                  <button type="submit">Submit Survey</button>
+                  <textarea class="form-control" name="suggestions" rows="6" placeholder="Any additional suggestions here"></textarea>
+                </div>
+                <div class="col-md-12 text-center">
+                  <button class="sent-message1" type="submit">Submit Survey</button>
+                  </div>
                 </div>
               </div>
             </form>
@@ -789,21 +792,21 @@
             <script>
                 document.getElementById('survey').addEventListener('submit', function (event) {
                 event.preventDefault(); // Stop form from submitting immediately
-                document.querySelector('.sent-message').style.display = 'block'; // Show the sent message
+                document.querySelector('.sent-message1').textContent = "Submitting..."; // Show the sent message
                 // Optional: Wait for a moment before submitting the form to give the user some feedback (this is not necessary but can enhance user experience)
                 setTimeout(() => {
                   event.target.submit(); // Submit the form
                 }, 1000);
               });
-
-              document.getElementById('contactForm').addEventListener('submit', function (event) {
-                event.preventDefault(); // Stop form from submitting immediately
-                document.querySelector('.sent-message').style.display = 'block'; // Show the sent message
-                // Optional: Wait for a moment before submitting the form to give the user some feedback (this is not necessary but can enhance user experience)
-                setTimeout(() => {
-                  event.target.submit(); // Submit the form
-                }, 1000);
-              });
+ 
+              // document.getElementById('contactForm').addEventListener('submit', function (event) {
+              //   event.preventDefault(); // Stop form from submitting immediately
+              //   document.querySelector('.sent-message2').style.display = 'block'; // Show the sent message
+              //   // Optional: Wait for a moment before submitting the form to give the user some feedback (this is not necessary but can enhance user experience)
+              //   setTimeout(() => {
+              //     event.target.submit(); // Submit the form
+              //   }, 1000);
+              // });
             </script>
           </div>
 
