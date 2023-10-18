@@ -726,7 +726,7 @@
 
           <div class="col-lg-6">
 
-            <form id="contactForm" action="https://forms.un-static.com/forms/279a9e72a1ffbb34276799bd8be57b1bb3b5a04f"
+            <!-- <form id="contactForm" action="https://forms.un-static.com/forms/279a9e72a1ffbb34276799bd8be57b1bb3b5a04f"
               method="post">
               <div class="row gy-4">
 
@@ -753,7 +753,7 @@
                 </div>
 
               </div>
-            </form>
+            </form> -->
 
             <br>
             <h2>Tell us about your experience</h2>
@@ -769,13 +769,19 @@
                 </div>
 
                 <div class="col-md-12">
-                  <p>On a scale of 1-10, how apparent is what we are selling?</p>
+                  <p>
+                    On a scale of 1-10, how cluttered do you feel our website is?
+                  </p>
                   <input type="number" class="form-control" name="rating" max="10" min="1" placeholder="1-10" required>
                 </div>
 
                 <div class="col-md-12">
+                  <p>On a scale of 1-10. How would you rate our websites aesthetic.</p>
+                  <input type="number" class="form-control" name="aesthetic" max="10" min="1" placeholder="1-10" required>
+                </div>
+                <div class="col-md-12">
                   <p>On a scale of 1-10. Based on your experience with Rockhardsitters.com, if this were a real service, how likely are you to use our service?</p>
-                  <input type="number" class="form-control" name="rating" max="10" min="1" placeholder="1-10" required>
+                  <input type="number" class="form-control" name="use-if-real" max="10" min="1" placeholder="1-10" required>
                 </div>
                 
                 <div class="col-md-12">
@@ -796,14 +802,14 @@
                 }, 1000);
               });
 
-              document.getElementById('contactForm').addEventListener('submit', function (event) {
-                event.preventDefault(); // Stop form from submitting immediately
-                document.querySelector('.sent-message').style.display = 'block'; // Show the sent message
-                // Optional: Wait for a moment before submitting the form to give the user some feedback (this is not necessary but can enhance user experience)
-                setTimeout(() => {
-                  event.target.submit(); // Submit the form
-                }, 1000);
-              });
+              // document.getElementById('contactForm').addEventListener('submit', function (event) {
+              //   event.preventDefault(); // Stop form from submitting immediately
+              //   document.querySelector('.sent-message').style.display = 'block'; // Show the sent message
+              //   // Optional: Wait for a moment before submitting the form to give the user some feedback (this is not necessary but can enhance user experience)
+              //   setTimeout(() => {
+              //     event.target.submit(); // Submit the form
+              //   }, 1000);
+              // });
             </script>
           </div>
 
