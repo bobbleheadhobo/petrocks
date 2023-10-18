@@ -23,7 +23,7 @@
   --background-color-rgb: 255, 255, 255;
   --default-color: #212529;
   --default-color-rgb: 33, 37, 41;
-  --primary-color: #aa74d4;
+  --primary-color: #48b785;
   --primary-color-rgb: 00, 00, 00;
   --secondary-color: #32353a;
   --secondary-color-rgb: 50, 53, 58;
@@ -34,9 +34,9 @@
 /* Nav Menu Colors */
 :root {
   --nav-color: #3a3939;
-  --nav-hover-color: #aa74d4;
+  --nav-hover-color: #48b785;
   --nav-dropdown-color: #3a3939;
-  --nav-dropdown-hover-color: #aa74d4;
+  --nav-dropdown-hover-color: #48b785;
   --nav-dropdown-background-color: #ffffff;
   --nav-mobile-background-color: #ffffff;
 }
@@ -232,7 +232,7 @@ section {
   --background-color: #ffffff;
   --secondary-color: #444444;
   --nav-color: #444444;
-  --nav-hover-color: #aa74d4;
+  --nav-hover-color: #48b785;
   box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -263,7 +263,7 @@ section {
   --background-color: #ffffff;
   --secondary-color: #444444;
   --nav-color: #444444;
-  --nav-hover-color: #aa74d4;
+  --nav-hover-color: #48b785;
 }
 
 /*--------------------------------------------------------------
@@ -1429,7 +1429,7 @@ section {
 
 .pricing h4 {
   font-size: 48px;
-  color: #aa74d4;
+  color: #48b785;
   font-weight: 700;
   font-family: var(--heading-font);
   margin-top: 40px;
@@ -1439,7 +1439,7 @@ section {
 
 .pricing h4 sup {
   font-size: 28px;
-  color: #aa74d4;
+  color: #48b785;
 }
 
 .pricing h4 span {
