@@ -68,7 +68,8 @@ function getAllCookies(){
             }
             throw new Error('Failed to fetch number of visitors');
         })
-        .then(numVistors => {            
+        .then(numVistors => {
+            console.log("num vistors", numVistors);
             // Update the DOM with the fetched number
             const visitorElement = document.querySelector(".purecounter[data-purecounter-end='0']");
             visitorElement.setAttribute('data-purecounter-end', numVistors);
